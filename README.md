@@ -8,6 +8,7 @@ Pengumpulan data dilakukan menggunakan kuesioner skala Likert yang terdiri atas 
 Analisis data dilakukan menggunakan perangkat lunak R dengan bantuan package readxl, psych, dan survey. Tahapan analisis meliputi uji validitas, uji reliabilitas, statistik deskriptif, perhitungan peluang pemilihan dan bobot sampel, pembentukan desain survei, serta estimasi rata-rata tingkat resiliensi akademik beserta ukuran ketelitiannya, seperti Standard Error (SE), Confidence Interval (CI), Relative Standard Error (RSE), dan Design Effect (DEFF).
 
 Hasil penelitian diharapkan dapat memberikan gambaran mengenai tingkat resiliensi akademik mahasiswa Program Studi Statistika Universitas Mataram serta menjadi informasi yang bermanfaat bagi program studi dalam menyusun kebijakan atau program yang mendukung peningkatan kemampuan mahasiswa dalam menghadapi tantangan akademik.
+
 STRUKTUR RIPOSTORY
 ├── Data/
 │   └── DATA TEKSAM.xlsx
@@ -152,6 +153,7 @@ svymean(~Skor,
 design_cluster)
 mean_kb
 Keterangan: Fungsi svydesign() digunakan untuk membentuk desain survei dengan memasukkan informasi cluster dan bobot sampel. Selanjutnya, fungsi svymean() digunakan untuk mengestimasi rata-rata tingkat resiliensi akademik berdasarkan desain sampling yang digunakan.
+
 HASIL DAN PEMBAHASAN 
 4.1 Uji Validitas
 Uji validitas dilakukan untuk mengetahui apakah setiap butir pertanyaan mampu mengukur variabel resiliensi akademik mahasiswa. Pengujian dilakukan menggunakan korelasi Pearson antara skor setiap item dengan skor total terkoreksi. Item dinyatakan valid apabila nilai r hitung > r tabel (0,361).
@@ -222,11 +224,13 @@ Tabel 4.6 Distribusi Kategori Tingkat Resiliensi Akademik
 | Sangat Tinggi |        61,66 |
  Interpretasi
 Berdasarkan hasil estimasi kategori, 61,66% mahasiswa berada pada kategori Sangat Tinggi, 35,86% berada pada kategori Tinggi, sedangkan 2,48% berada pada kategori Rendah. Tidak terdapat mahasiswa yang termasuk dalam kategori Sangat Rendah. Hasil ini menunjukkan bahwa secara umum mahasiswa Program Studi Statistika Universitas Mataram memiliki tingkat resiliensi akademik yang tinggi hingga sangat tinggi, yang mengindikasikan kemampuan yang baik dalam menghadapi tantangan dan tekanan selama proses pembelajaran.
+
 KESIMPULAN
 Berdasarkan hasil penelitian mengenai Estimasi Tingkat Resiliensi Akademik Mahasiswa Program Studi Statistika Universitas Mataram Menggunakan Two-Stage Cluster Sampling, diperoleh beberapa kesimpulan sebagai berikut.
 1. Hasil uji validitas menunjukkan bahwa seluruh butir pertanyaan (P1–P10) memiliki nilai r hitung lebih besar daripada r tabel (0,361), sehingga seluruh item dinyatakan valid dan mampu mengukur tingkat resiliensi akademik mahasiswa. Selanjutnya, hasil uji reliabilitas menunjukkan nilai Cronbach's Alpha sebesar 0,876, sehingga instrumen penelitian dinyatakan sangat reliabel dan layak digunakan dalam penelitian.
 2. Berdasarkan hasil estimasi menggunakan metode Two-Stage Cluster Sampling, diperoleh estimasi rata-rata tingkat resiliensi akademik mahasiswa Program Studi Statistika Universitas Mataram sebesar 3,476 dengan Standard Error sebesar 0,168 serta Confidence Interval 95% sebesar 3,146–3,806. Nilai Relative Standard Error (RSE) sebesar 4,85% menunjukkan bahwa hasil estimasi memiliki tingkat ketelitian yang baik sehingga dapat digunakan untuk menggambarkan kondisi populasi.
 3. Hasil estimasi berdasarkan kategori menunjukkan bahwa sebagian besar mahasiswa berada pada kategori Sangat Tinggi sebesar 61,66%, diikuti kategori Tinggi sebesar 35,86%, kategori Rendah sebesar 2,48%, dan tidak terdapat mahasiswa pada kategori Sangat Rendah. Dengan demikian, dapat disimpulkan bahwa tingkat resiliensi akademik mahasiswa Program Studi Statistika Universitas Mataram secara umum berada pada kategori sangat tinggi, yang menunjukkan bahwa mahasiswa memiliki kemampuan yang baik dalam menghadapi tekanan, tantangan, dan kesulitan selama proses pembelajaran.
+
 SARAN
 Berdasarkan hasil penelitian, terdapat beberapa saran yang dapat diberikan sebagai berikut.
 1. Program Studi Statistika Universitas Mataram diharapkan dapat mempertahankan dan meningkatkan resiliensi akademik mahasiswa melalui kegiatan akademik maupun nonakademik yang mendukung kemampuan mahasiswa dalam menghadapi tantangan selama perkuliahan.
